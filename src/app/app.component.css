@@ -1,0 +1,22 @@
+
+body{
+  display: flex;
+
+}
+div{
+  height: 15%;
+  width: 10%;
+  background-color: aqua;
+  margin-right:5% ;
+
+
+}
+div:hover{
+  height: 400px ;
+}
+
+div not::hover{
+  transition: 2s;
+
+
+}
