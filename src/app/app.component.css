@@ -1,22 +1,50 @@
-
 body{
-  display: flex;
+    display: flex;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background :linear-gradient(to left, rgb(61, 57, 57), rgb(255, 255, 255));
+    
+  
+  }
+  div{
+    height: 100px;
+    width: 200px;
+    background-color: rgb(176, 186, 231);
+    margin-right:5% ;
+    text-align: center;
+    border-radius: 30px;
+    border-color: black;
+    font-size: 34px ;
 
-}
-div{
-  height: 15%;
-  width: 10%;
-  background-color: aqua;
-  margin-right:5% ;
+    
+  }
+  div > p{
+    display: none;
+
+  }
+  div:hover{
+    height: 400px ;
+    background-color: black;
+    color: aliceblue;
 
 
-}
-div:hover{
-  height: 400px ;
-}
+  }
+  div:hover > p {
+    color: aliceblue;
+    display: block;
+    font-size: 20px;
+  }  
+  div :not(:hover){
+    transition: 2s;
+  }
+  p{
+    text-indent: 2px;
 
-div not::hover{
-  transition: 2s;
+  }
+  #github{
+    width: 400px;
 
-
-}
+  }
+  div#github:hover{
+    height: 100px;
+    
+  }
